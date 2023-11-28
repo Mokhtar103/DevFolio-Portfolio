@@ -1,0 +1,504 @@
+/* Global rules */
+
+* {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utilities */
+
+.text-bold {
+    font-weight: 600;
+}
+
+.for-icons {
+    width: 40px;
+    height: 40px;
+}
+
+.line-design {
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+.line-services {
+    content:"";
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+/* Navbar Section */
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #fff;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    bottom: 5px;
+    left: 7px;
+    transition: all 0.5s;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 80%;
+}
+
+@media screen and (max-width:992px) {
+
+    .navbar .navbar-collapse {
+        background-color: white;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .navbar-nav .nav-link {
+        color: black;
+        margin-top: 5px;
+        padding-bottom: 15px;
+    }
+
+    .navbar-nav .nav-link.active {
+        color: black;
+    }
+
+    .navbar-nav .nav-link::after {
+        background-color: none;
+    }
+}
+
+
+
+/* End of Navbar Section */
+
+
+/* Header Section */
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.2)),url(../imgs/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.animation-text::after {
+    content: "|";
+    animation-name: typing;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+    0% {
+        content: 'F|';
+    }
+
+    3% {
+        content: 'Fre|';
+    }
+
+    6% {
+        content: 'Free|';
+    }
+
+    9% {
+        content: 'Freel|';
+    }
+
+    12% {
+        content: 'Freela|';
+    }
+
+    15% {
+        content: 'Freelan|';
+    }
+
+    18% {
+        content: 'Freelanc|';
+    }
+
+    21% {
+        content: 'Freelance|';
+    }
+
+    24% {
+        content: 'Freelancer|';
+    }
+
+    27% {
+        content: 'Freelance|';
+    }
+
+    30% {
+        content: 'Freelanc|';
+    }
+
+    33% {
+        content: 'Freelan|';
+    }
+
+    36% {
+        content: 'Freela|';
+    }
+
+    39% {
+        content: 'Freel|';
+    }
+
+    42% {
+        content: 'Free|';
+    }
+
+    45% {
+        content: 'Fre|';
+    }
+
+    48% {
+        content: 'Fr|';
+    }
+
+    51% {
+        content: 'F|';
+    }
+
+    54% {
+        content: 'D|';
+    }
+
+    57% {
+        content: 'De|';
+    }
+
+    60% {
+        content: 'Dev|';
+    }
+
+    63% {
+        content: 'Deve|';
+    }
+
+    67% {
+        content: 'Devel|';
+    }
+
+    70% {
+        content: 'Develo|';
+    }
+
+    71% {
+        content: 'Develop|';
+    }
+
+    74% {
+        content: 'Develope|';
+    }
+
+    77% {
+        content: 'Developer |';
+    }
+
+    80% {
+        content: ' Develope|';
+    }
+
+    83% {
+        content: ' Develop|';
+    }
+
+    86% {
+        content: 'Develo|';
+    }
+
+    89% {
+        content: ' Devel|';
+    }
+
+    92% {
+        content: ' Deve|';
+    }
+
+    95% {
+        content: ' Dev|';
+    }
+
+    98% {
+        content: ' De|';
+    }
+
+    100% {
+        content: 'D|';
+    }
+}
+
+/* End Of Header Section */
+
+/* About Section */
+
+.box-shadow-full {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about .title-box h3 {
+    position: relative;
+}
+
+.about .title-box h3::before {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background-color: #0078ff;
+        width: 100px;
+        bottom: -12px;
+}
+
+
+/* End Of About Section */
+
+/* Services Section */
+
+.services .service-icon {
+    box-shadow: 0 0 0 10px #0078ff;
+    transition: all 0.5s
+}
+
+.services .service-box:hover .service-icon {
+    background-color: #0078ff;
+    box-shadow: 0 0 0 10px #CDE1F8;
+    color: #fff;
+}
+
+/* End Of Services Section */
+
+/* Work Section */
+
+.counter .work-icon {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.counter .work-section {
+    background-image: linear-gradient(rgba(0, 120,500,1), rgba(0, 120,500,0.5)),url(../imgs/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1024px) {
+    .counter .work-section {
+        background-attachment: scroll;
+    }
+}
+
+
+/* End Of Work Section */
+
+/* Portfolio Section */
+
+.portfolio .card-content span {
+    color: #0078ff;
+}
+
+.portfolio .card-content{
+    font-size: 13px;
+}
+
+.portfolio .card-content p {
+    color: #4e4e4e;
+}
+
+.portfolio .port-box {
+    background-color: #fff;
+}
+
+.portfolio .card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.portfolio .card-img {
+    overflow: hidden;
+}
+
+.portfolio .card img {
+    transition: 1.5s all;
+}
+
+.portfolio .card:hover img {
+    transform: scale(1.5, 1.5);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .portfolio .card-content h5 {
+        font-size: 13px;
+    }
+}
+
+/* End Of Portfolio Section */
+
+/* Testimonial Section */
+
+#test {
+    background-image: url(../imgs/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.test .test-layer {
+    background-color: #0078ff;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+
+.carousel-indicators [data-bs-target] {
+    text-indent: 0;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+
+/* End Of Testimonial Section */
+
+/* Blog Section */
+
+.blog .card-footer img {
+    width: 35px;
+}
+
+.blog .card-body a {
+    transition: color 0.5s;
+}
+
+.blog .card-body a:hover {
+    color: #0078ff;
+}
+
+.blog .card-body .category {
+    background-color: #0078ff;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 10px 0px;
+    border-radius: 4px;
+    top:-16px;
+    left: 40%;
+    display: flex;
+}
+
+.blog .card-body .category h6 {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+/* End Of Blog Section */
+
+/* Contact Section */
+
+.contact {
+    background-image: linear-gradient(rgba(0, 120, 500, 1), rgba(0, 120, 500, 0.5)),url(../imgs/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.contact .box-shadow {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact input, .contact textarea {
+    padding: 10px 15px;
+    border-color: #dee2e6;
+    border-width: 1px;
+}
+
+.contact .form-group {
+    width: 100%;
+}
+
+.contact .form-group:focus {
+    border-color: #0078ff;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+.title-box h5 {
+    position: relative;
+}
+
+.title-box h5::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+}
+
+.contact button {
+    background: #0078ff;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s
+}
+
+.contact button:hover {
+    background: #3393ff;
+    box-shadow: 0 0 0 4px #cde1f8;
+}
+
+.contact .socials li {
+    transition: 0.4s;
+}
+
+.contact .socials li:hover {
+        background-color: #0078ff;
+        color: #fff;
+        box-shadow: 0 0 0 3px #cde1f8;
+        cursor: pointer;
+}
+
+/* End Of Contact Section */
+
+/* Footer Section */
+
+.footer {
+    background-color: #0062d3;
+}
